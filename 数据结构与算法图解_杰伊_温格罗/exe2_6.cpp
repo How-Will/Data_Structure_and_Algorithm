@@ -29,14 +29,19 @@ private:
     int last; // 当前已存表项的最后位置(从0开始)
     int max_size;   // 集合中最多可以存放的元素个数
     void bubbleSort(){
-        for(int i = 0; i <= last; i++){
-            for(int j = i + 1; j <= last; j++){
-                if(data[i] > data[j]){
+        bool sorted = false;    // 是否发生交换，没有发生说明已经排好序了
+        int end = last; 
+        while(!sorted){ // 还没有排好序
+            sorted = true;
+            for(int i = 0; i < end; i++){
+                if(data[i] > data[i + 1]){
                     int temp = data[i];
-                    data[i] = data[j];
-                    data[j] = temp;
+                    data[i] = data[i+1];
+                    data[i+1] = temp;
+                    sorted = false;     // 发生交换，改为false
                 }
             }
+            end -= 1;
         }
     }
 };

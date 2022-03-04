@@ -104,8 +104,117 @@
 
 3. 总共需要7+1=8步
 
-## [exercise 1.6](exe1_1.cpp)
+## [exercise 1.6](exe1_6.cpp)
 
 > Use your favorite object-oriented programming language to create a class that represents an array-based set. It should include functions/methods that serve as the key operations: Read, search, insert, and delete. Ensure that the insert operation will not insert duplicate values.
 
+# Chapter 2
 
+## exercise 2.1
+
+> There’s an age old puzzle that goes as follows: You’re at a river with two buckets. One holds exactly 3 liters, and one holds exactly 5 liters. Figure out how to measure out exactly 4 liters using those two buckets.
+> 
+> 1. Develop two different algorithms for measuring out 4 liters.
+> 2. Which of your algorithms is more efficient? That is, how many steps does each algorithm take?
+
+算法1：
+
+1. 5L桶装满水。
+
+2. 由5L桶向3L桶倒水，倒满为止。**5L桶中余下2L水。**
+
+3. 把3L桶的水倒掉，由5L桶向3L桶倒水。**3L桶中现有2L水，5L桶中没有水。**
+
+4. 5L桶装满水。
+
+5. 由5L桶向3L桶倒水，倒满为止。**5L桶中现有4L水。**
+
+算法2：
+
+1. 将3升的桶装满，倒到5升里面，重复执行两次，此时**3升桶里面剩余1升。**
+
+2. 将5升的桶中的谁倒掉，将第一步中的1升水倒入5升桶中。
+
+3. 将3升的桶装满，向5升的桶中倒，则**5升桶中有4升水了。**
+
+## exercise 2.2
+
+> How many steps would it take to insert the number 7 into the ordered array of [2, 4, 6, 8, 10, 12]?
+
+1. 搜索插入位置：4步
+
+2. 元素后移：3步
+
+3. 插入元素：1步
+
+4. 总共需要 4 + 3 + 1 = 8步
+
+## exercise 2.3
+
+> How many steps would it take to search for the number 8 in the ordered array: [2, 4, 6, 8, 10, 12]?
+
+使用二分查找算法需要2步。使用顺序查找需要4步。
+
+## exercise 2.4
+
+> How many steps does it take to perform binary search on array of size 200?
+
+至多需要8步。
+
+## exercise 2.5
+
+> How many steps does it take to perform binary search on array of size 400?
+
+至多需要9步。
+
+## [exercise 2.6](exe2_6.cpp)
+
+> Use your favorite object-oriented programming language to create a class that represents an ordered array. It should include functions/methods that serve as the key operations: Read, search, insert, and delete. Ensure that the insert operation inserts the value in the correct place within the ordered array.
+
+# Chapter 3
+
+## exercise 3.1
+
+> Inspect the following algorithm, and describe its time complexity in terms of Big O Notation:
+> 
+> ```python
+> x = 1
+> while x < 100
+>   print x
+>   x += 1
+> end
+> ```
+
+该算法总共会执行99步。用大O记法表示为 `O(N)`
+
+## exercise 3.2
+
+> In the below graph, six algorithms are depicted. The x axis represents the number of data elements, and the y axis represents how many steps the algorithm takes. By color, list the algorithms from fastest to slowest.
+> 
+> ![](https://commonsensecomputerscience.com/old-site/img/exercises/chapter_3_graph.png)
+
+青色 > 紫色 > 橘色 > 绿色 > 红色 > 蓝色
+
+## exercise 3.3
+
+> How would you describe the following algorithm in terms of Big O Notation: Looking up someone in a phone book by starting with the first name in the book and reading each subsequent name until you find the name you’re looking for.
+
+顺序查找的时间复杂度为 `O(N)`
+
+## exercise 3.4
+
+> How would you describe the following algorithm in terms of Big O Notation: Looking up someone in a phone book by starting with the middle of the book - and, when seeing that the name is higher or lower, jumping to the next halfway point, and so on until you find the correct name.
+
+二分查找的时间复杂度为 `O(logN)`
+
+## exercise 3.5
+
+> How would you describe the following algorithm in terms of Big O Notation: You’d like to use one laptop to clone its operating system to 15 other laptops, so you take the original laptop, and one by one, you use it to clone each other laptop.
+
+时间复杂度为 `O(N)`
+
+## exercise 3.6
+
+> How would you describe the following algorithm in terms of Big O Notation: You’d like to use one laptop to clone its operating system to 15 other laptops, so you take the first laptop and clone a second laptop. You then take the 2 completed laptops and clone 2 other laptops. You then take the 4 completed laptops to clone 4 other laptops. Finally, you take the 8 completed laptops and use them to clone 8 other laptops, so you end up with 16 completed laptops.
+
+时间复杂度为 `O(logN)`

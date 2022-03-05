@@ -218,3 +218,64 @@
 > How would you describe the following algorithm in terms of Big O Notation: You’d like to use one laptop to clone its operating system to 15 other laptops, so you take the first laptop and clone a second laptop. You then take the 2 completed laptops and clone 2 other laptops. You then take the 4 completed laptops to clone 4 other laptops. Finally, you take the 8 completed laptops and use them to clone 8 other laptops, so you end up with 16 completed laptops.
 
 时间复杂度为 `O(logN)`
+
+# Chapter 4
+
+## exercise 4.1
+
+> Regarding the array [50, 60, 70, 20, 30, 10]:
+> 
+> 1. Describe the exact steps that Bubble Sort would take on the array.
+> 2. How many comparisons occurred?
+> 3. How many swaps occurred?
+
+1. 进行了 5+4+3+2+1=15次比较，同时进行了 3+3+3+1+1=11次交换。总共要使用26步，才能排序完成。
+
+2. 15次
+
+3. 11次
+
+## exercise 4.2
+
+> Regarding the array [10, 20, 30, 40, 50, 60]:
+> 
+> 1. Describe the exact steps that Bubble Sort would take on the array.
+> 2. How many comparisons occurred?
+> 3. How many swaps occurred
+
+1. 数组已经有序了，进行5+4+3+2+1=15次比较就可以了。
+
+2. 15次
+
+3. 0次
+
+## exercise 4.3
+
+> Regarding the array [60, 50, 40, 30, 20, 10]:
+> 
+> 1. Describe the exact steps that Bubble Sort would take on the array.
+> 2. How many comparisons occurred?
+> 3. How many swaps occurred?
+
+1. 进行了15次比较，和15次交换。总共要使用30步，才能排序完成。
+
+2. 15次
+
+3. 15次
+
+## exercise 4.4
+
+> Describe the following code in terms of Big O Notation:
+> 
+> ```python
+> first_array = [5, 4, 9, 7, 2]
+> second_array = [3, 1, 6, 8, 0]
+> 
+> first_array.each do |x|
+>   second_array.each do |y|
+>     print x * y
+>   end
+> end
+> ```
+
+假设 `first_array` 和 `second_array` 的元素个数都为N。则时间复杂度为 `O(N^2)`

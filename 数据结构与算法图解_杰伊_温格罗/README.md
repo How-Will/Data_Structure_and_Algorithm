@@ -337,3 +337,61 @@
 2. `O(N)`
 
 3. `O(1)`
+
+# Chapter 6
+
+## exercise 6.1
+
+> Regarding the array [50, 60, 70, 20, 30, 10]:
+> 
+> 1. Describe the exact steps that Insertion Sort would take on the array.
+> 2. How many comparisons occurred?
+> 3. How many swaps occurred?
+
+1. 进行了1+1+3+4+5=14次比较，0+0+3+3+5=11次平移，5次的插入，5次的移除。总共要使用35步，才能排序完成。
+
+2. 14次
+
+3. 11次
+
+## exercise 6.2
+
+> Regarding the array [10, 20, 30, 40, 50, 60]:
+> 
+> 1. Describe the exact steps that Insertion Sort would take on the array.
+> 2. How many comparisons occurred?
+> 3. How many swaps occurred?
+
+1. 进行了5次比较，0次平移，5次插入，5次移除。总共要使用15步，才能排序完成。
+
+2. 5次
+
+3. 0次
+
+## exercise 6.3
+
+> Regarding the array [60, 50, 40, 30, 20, 10]:
+> 
+> 1. Describe the exact steps that Insertion Sort would take on the array.
+> 2. How many comparisons occurred?
+> 3. How many swaps occurred?
+
+1. 进行了15次比较，15次平移，5次插入，5次移除。总共要使用40步，才能排序完成。
+
+2. 15次
+
+3. 15次
+
+## exercise 6.4
+
+> Describe in the following cases whether Bubble Sort is more efficient, or Insertion Sort is more efficient.
+> 
+> 1. The best-case scenario.
+> 2. An average-case scenario.
+> 3. The worst-case scenario.
+
+1. 最好情况下，冒泡排序等于插入排序
+
+2. 平均情况下，插入排序优于冒泡排序
+
+3. 最坏情况下，插入排序差于冒泡排序

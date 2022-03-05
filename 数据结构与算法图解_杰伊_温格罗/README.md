@@ -279,3 +279,61 @@
 > ```
 
 假设 `first_array` 和 `second_array` 的元素个数都为N。则时间复杂度为 `O(N^2)`
+
+# chapter 5
+
+## exercise 5.1
+
+> Regarding the array [50, 60, 70, 20, 30, 10]:
+> 
+> 1. Describe the exact steps that Selection Sort would take on the array.
+> 2. How many comparisons occurred?
+> 3. How many swaps occurred?
+
+1. 进行了5+4+3+2+1=15次比较，和4次交换。总共要使用19步，才能排序完成。
+
+2. 15次
+
+3. 4次
+
+## exercise 5.2
+
+> Regarding the array [10, 20, 30, 40, 50, 60]:
+> 
+> 1. Describe the exact steps that Selection Sort would take on the array.
+> 2. How many comparisons occurred?
+> 3. How many swaps occurred?
+
+1. 进行了15次比较，0次交换。总共要使用15步，才能排序完成。
+
+2. 15次
+
+3. 0次
+
+## exercise 5.3
+
+> Regarding the array [60, 50, 40, 30, 20, 10]:
+> 
+> 1. Describe the exact steps that Selection Sort would take on the array.
+> 2. How many comparisons occurred?
+> 3. How many swaps occurred?
+
+1. 进行了15次比较，5次交换。总共要使用20步，才能排序完成。
+
+2. 15次
+
+3. 5次
+
+## exercise 5.4
+
+> How would you describe in Big O Notation:
+> 
+> 1. An algorithm that takes 2N steps?
+> 2. An algorithm that takes log(N / 2) steps?
+> 3. An algorithm that always takes 2,532 steps?
+
+1. `O(N)`
+
+2. `O(N)`
+
+3. `O(1)`

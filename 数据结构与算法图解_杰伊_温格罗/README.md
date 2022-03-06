@@ -280,7 +280,7 @@
 
 假设 `first_array` 和 `second_array` 的元素个数都为N。则时间复杂度为 `O(N^2)`
 
-# chapter 5
+# Chapter 5
 
 ## exercise 5.1
 
@@ -395,3 +395,31 @@
 2. 平均情况下，插入排序优于冒泡排序
 
 3. 最坏情况下，插入排序差于冒泡排序
+
+# Chapter 7
+
+## exercise 7.1
+
+> Assume that we have a hash table with a superb load factor, which means that on average, there's only one piece of data in each cell. Describe in Big O Notation the efficiency of:
+> 
+> 1. Reading from the hash table.
+> 2. Inserting into the hash table.
+> 3. Deleting from the hash table.
+
+1. `O(1)`
+
+2. `O(1)`
+
+3. `O(1)`
+
+## exercise 7.2
+
+> While we mentioned that an ideal load factor is 0.7, I’ve seen others say that 1 is an ideal load factor. If we followed this new advice, and we wanted to store 100 key/value pairs in a hash table, how many cells should it have?
+
+需要100个格子。
+
+## exercise 7.3
+
+> If we had a hash function that distributes data evenly, and a load factor of 3, how many key/values would be stuffed into each cell on average?
+
+3对键值对。

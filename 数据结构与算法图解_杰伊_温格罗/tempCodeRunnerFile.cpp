@@ -1,1 +1,0 @@
-binarySearch(nums, 2, 0, 4);

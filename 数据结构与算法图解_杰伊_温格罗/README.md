@@ -491,3 +491,40 @@
 ## [exercise 9.9](exe9_9.cpp)
 
 > Write a recursive function that returns all anagrams of a string (even if the anagrams aren’t words themselves). For example, the anagrams of cat are cat, cta, act, atc, tac, tca.
+
+# Chapter 10
+
+## exercise 10.1
+
+> Describe the exact steps that Quicksort would take for the following array: [90, 100, 20, 60, 80, 110, 120, 40, 10, 30, 50, 70].
+
+1. 第一次分区：进行了13次比较，5次交换。【50，30，20，60，10，40，**70**，110，80，100，90，120】
+
+2. 第二次分区：进行了13次比较，3次交换。【10，30，20，**40**，50，60，**70**，110，80，100，90，**120**】
+
+3. 第三次分区：进行了13次比较，4次交换。【10，**20**，30，**40**，50，**60**，**70**，80，**90**，100，110，**120**】
+
+4. 第四次分区：进行了3次比较，1次交换。【10，**20**，30，**40**，50，**60**，**70**，80，**90**，100，**110**，**120**】
+
+5. 排序完成。
+
+## exercise 10.2
+
+> Create a table that compares the best-, middle-, and worst-case scenarios for Bubble Sort, Selection Sort, Insertion Sort, and Quicksort.
+
+| 类别   | 最好情况       | 平均情况       | 最坏情况     |
+| ---- | ---------- | ---------- | -------- |
+| 冒泡排序 | `O(N)`     | `O(N^2)`   | `O(N^2)` |
+| 选择排序 | `O(N^2)`   | `O(N^2)`   | `O(N^2)` |
+| 插入排序 | `O(N)`     | `O(N^2)`   | `O(N^2)` |
+| 快速排序 | `O(NlogN)` | `O(NlogN)` | `O(N^2)` |
+
+## exercise 10.3
+
+> Describe the exact steps that Quickselect would take for the second-to-lowest value in the following array: [90, 100, 20, 60, 80, 110, 120, 40, 10, 30, 50, 70].
+
+1. 第一次分区：第一次分区：进行了13次比较，5次交换。【50，30，20，60，10，40，**70**，110，80，100，90，120】
+
+2. 对左半部分进行分区：进行了7次比较，2次交换。【10，30，20，**40**，50，60，**70**，110，80，100，90，120】
+
+3. 继续对左半部分进行分区：进行了4次比较，1次交换。【10，**20**，30，**40**，50，60，**70**，80，90，100，110，120】。故第二小的数字是20

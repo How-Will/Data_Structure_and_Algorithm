@@ -423,3 +423,71 @@
 > If we had a hash function that distributes data evenly, and a load factor of 3, how many key/values would be stuffed into each cell on average?
 
 3对键值对。
+
+# Chapter 8
+
+## exercise 8.1
+
+> Describe the steps that occur when we add the numbers 5, 3, 9, 2, 8 to a stack and then remove each number from the stack.
+
+入栈
+
+【空栈】->入栈5【5】->入栈3【5，3】->入栈9【5，3，9】->入栈2【5，3，9，2】->入栈8【5，3，9，2，8】
+
+出栈
+
+【5，3，9，2，8】->出栈8【5，3，9，2】->出栈2【5，3，9】->出栈9【5，3】->出栈3【5】->出栈5【空栈】
+
+## exercise 8.2
+
+> Describe the steps that occur when we add the numbers 5, 3, 9, 2, 8 to a queue and then remove each number from the queue.
+
+入队
+
+【空队】->入队5【5】->入队3【5，3】->入队9【5，3，9】->入队2【5，3，9，2】->入队8【5，3，9，2，8】
+
+出队
+
+【5，3，9，2，8】->出队5【3，9，2，8】->出队3【9，2，8】->出队9【2，8】->出队2【8】->出队8【空队】
+
+## [exercise 8.3](exe8_3.cpp)
+
+> In your favorite programming language, use a stack to implement an algorithm that reverses a string.
+
+# Chapter 9
+
+## [exercise 9.1](exe9_1.cpp)
+
+> You can technically use recursion to replace any loop. Write a function that prints to the terminal "HELLO" 10 times - but don’t use a loop! Use a recursive function instead.
+
+## [exercise 9.2](exe9_2.cpp)
+
+> Write a recursive function that prints out all even numbers from 2 until 100.
+
+## [exercise 9.3](exe9_3.cpp)
+
+> Fibonacci numbers are numbers that follow this pattern: 1, 1, 2, 3, 5, 8, 13, 21, 34, ... that is, each number is the sum of the two immediate numbers that precede it. Write a recursive function that prints out the list of fibonacci numbers up to 987.
+
+## [exercise 9.4](exe9_4.cpp)
+
+> Write a recursive function that accepts an array of numbers and returns the sum.
+
+## [exercise 9.5](exe9_5.cpp)
+
+> Write a recursive function that reverses a string.
+
+## [exercise 9.6](exe9_6.cpp)
+
+> Write a recursive function that accepts two numbers (a numerator and denominator), and returns the remainder if you divide the numerator by the denominator. The catch: Do not use the modulo operator!
+
+## [exercise 9.7](exe9_7.cpp)
+
+> Write a recursive binary search function.
+
+## [exercise 9.8](exe9_8.cpp)
+
+> Write a recursive function that accepts two numbers and calculates one by the power of the other. For example, if the numbers were 2 and 5, it would calculate 25. Do not use any built-in power operations provided by your computer language.
+
+## [exercise 9.9](exe9_9.cpp)
+
+> Write a recursive function that returns all anagrams of a string (even if the anagrams aren’t words themselves). For example, the anagrams of cat are cat, cta, act, atc, tac, tca.
